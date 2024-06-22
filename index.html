@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding for Unicode support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>Registration Form</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styling -->
+</head>
+<body>
+    
+    <h1>Registration Form</h1> <!-- Main heading -->
+    <p>Please fill in this form with the required information</p> <!-- Instructional paragraph -->
+
+    <form action="" method="post" id="form" class="form"> <!-- Start of the registration form -->
+        <fieldset>
+            <label for="name">Name <input type="text" id="Name" name="Name" class="name" required/></label> <!-- Name input field -->
+            <label for="email">Email <input type="email" id="email" name="email" class="email" required/></label> <!-- Email input field -->
+            <label for="password">Password <input type="password" id="password" name="password" minlength="8" autocomplete="on" required/></label> <!-- Password input field -->
+            <label for="Confirm_Password">Confirm Password <input type="password" id="Con_password" name="Con_password" minlength="8" autocomplete="on" required/></label> <!-- Confirm password input field -->
+            <label for="DOB">Date of Birth <input type="date" id="DOB" name="DOB" min="2001-01-01" max="2049-01-01" required/></label> <!-- Date of Birth input field -->
+            <label for="PhoneNo">Phone Number: <input type="number" id="Number" name="Number" maxlength="10" minlength="10" required/></label> <!-- Phone number input field -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend> <!-- Legend for the gender selection -->
+            <label for="Gender"><input id="Male-gen" type="radio" name="gender" class="inline" checked />Male</label> <!-- Male gender radio button -->
+            <label for="Gender"><input id="Female-gen" type="radio" name="gender" class="inline" /> Female</label> <!-- Female gender radio button -->
+        </fieldset>
+
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> <!-- Checkbox for terms and conditions acceptance -->
+            I accept the <a href="http://127.0.0.1:5501/terms.html">terms and conditions</a> <!-- Link to terms and conditions -->
+        </label>
+
+        <input type="submit" value="Submit" /> <!-- Submit button to submit the form -->
+        <input type="reset" value="Reset" /> <!-- Reset button to reset the form fields -->
+
+    </form> <!-- End of the registration form -->
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file for scripting -->
+
+</body>
+</html>
